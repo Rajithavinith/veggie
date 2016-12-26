@@ -1,0 +1,116 @@
+
+div.img {
+    margin:15px;
+    border: 1px solid #ccc;
+    float: left;
+    width:110px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+div.title{
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+
+ }
+
+
+ 
+@media only screen and (max-width: 700px){
+    .img {
+        width: 49.99999%;
+         margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .img {
+        width: 100%;
+    }
+}
+
+/*{margin: 0;padding:0px}
+.header{width: 100%; background-color: #0d77b6 !important; height: 60px;}
+.showLeft{  
+    text-shadow: none !important;
+    color:#000000 !important;
+    padding:10px;
+}*/
+
+*{
+    margin: 0px;
+    padding :0px;
+}                
+
+.icons li {
+    background: #ffffff;
+    height: 7px;
+    width: 7px;
+    line-height: 0;
+    list-style: none outside none;
+    margin-right: 15px;
+    margin-top: 5px;
+    vertical-align: center;
+    border-radius:50%;
+
+}  
+
+.btn-right {
+    right: 0.4em;
+}
+
+.btn-right {
+    position: absolute;
+    top: 0.0024em;
+}
+
+
+a {
+ text-decoration: none !important;
+ 
+ 
+}
+
+
+
+.ui-page-theme-a .ui-btn{
+    text-shadow: none !important;
+}
+
+#header{
+    height: 50px;
+    background-color:#02c700;
+    color: #ffffff;
+}
+
+#header h3{
+    font-size: 20px;
+    padding-top: 7px;
+
+}  
+
+ [data-role=page]{height: 100% !important; position:relative !important;}
+
+.wraptocenter {
+    
+    
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+
+
+ 

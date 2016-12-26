@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <title>Veggie</title>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <header id="header" >
+            <h3 align="center" style="font-family:DejaVu Sans Light;">Veggie</h3> 
+            <a href="#popupArrow" id="open-popupArrow"><ul class="icons btn-right showLeft">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul> </a>
+            <div data-role="popup" id="popupArrow" data-arrow="false">
+               <a href="about.html"  class="menu_list"  style="font-weight: 500; color:#333333; width: 70px; padding-left: 10px;" id="aboutus" >About us</a>
+                <p style="width:70px; padding-left: 10px;" class="menu_list" id="logout">Exit</p> 
+               
+            </div>
+        </header>
+        <div data-role="main" class="ui-content" >
+            <select name="language" id="language" >
+                <option value="English" >English</option>
+                <option value="Malayalam" >Malayalam</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Telugu">Telugu</option>
+            </select>
+       
+            <div id="English">
+                <div class="img bulb">
+                    <a href="bulb.html" rel="external" >
+                    <img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" ></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img flower" >
+                    <a href="flower.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fruits" >
+                    <a href="fruit.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img fungi">
+                    <a href="fungi.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+               <div class="img leafy" >
+                    <a href="leafy.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img rot">
+                    <a href="root.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="seeds.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+            </div>
+           <div id="Malayalam">
+                <div class="img bulb">
+                    <a href="malayalamb.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" alt=""></a>
+                    <div class="title"></div>
+                </div> 
+                <div class="img flower">
+                    <a href="malayalamf.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fruits">
+                    <a href="malayalamfr.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fungi">
+                    <a href="malayalamfu.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img leafy">
+                    <a href="malayalaml.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img rot">
+                    <a href="malayalamr.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="malayalams.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+        </div> 
+        <div id="Tamil">
+                <div class="img bulb">
+                    <a href="tamilb.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img flower">
+                    <a href="tamilf.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div> 
+                <div class="img fruits">
+                    <a href="tamilfr.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fungi">
+                    <a href="tamilfu.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img leafy">
+                    <a href="tamill.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img rot">
+                    <a href="tamilr.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="tamils.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+    </div>
+    <div id="Hindi">
+                <div class="img bulb">
+                    <a href="hindib.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img flower">
+                    <a href="hindif.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div> 
+                <div class="img fruits">
+                    <a href="hindifr.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fungi">
+                    <a href="hindifu.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img leafy">
+                    <a href="hindil.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img rot">
+                    <a href="hindir.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="hindis.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+    </div>
+    <div id="Kannada">
+                <div class="img bulb">
+                    <a href="kannadab.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img flower">
+                    <a href="kannadaf.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div> 
+                <div class="img fruits">
+                    <a href="kannadafr.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fungi">
+                    <a href="kannadafu.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img leafy">
+                    <a href="kannadal.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img rot">
+                    <a href="kannadar.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="kannadas.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+    </div>
+    <div id="Telugu">
+                <div class="img bulb">
+                    <a href="telugub.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fbulb_veg.jpg?alt=media&token=01bd43a6-4e11-4349-bcfa-af05564dd381" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img flower">
+                    <a href="teluguf.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fflower_veg.jpg?alt=media&token=5dc4eefe-958e-4a14-bddc-b6fcbace100e" alt=""></a>
+                    <div class="title"></div>
+                </div> 
+                <div class="img fruits">
+                    <a href="telugufr.html" rel="external" ><img src="https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffruits_veg.jpg?alt=media&token=b2e8bfcc-cd6b-4aac-8e28-332809862225" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img fungi">
+                    <a href="telugufu.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Ffungi_veg.png?alt=media&token=365f2fc9-6a6b-4026-8d9a-749cf0cdb7d3" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img leafy">
+                    <a href="telugul.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fleafy_veg.jpg?alt=media&token=5f994777-6997-4453-a0f5-278a11a50497" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                 <div class="img rot">
+                    <a href="telugur.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Froot_veg.jpg?alt=media&token=ba9fb52e-7507-4c1a-9b1b-b7145ccfa09d" alt=""></a>
+                    <div class="title"></div>
+                </div>
+                <div class="img seeds">
+                    <a href="telugus.html" rel="external" ><img src=" https://firebasestorage.googleapis.com/v0/b/veggy-d0f13.appspot.com/o/images%2Fseeds_veg.jpg?alt=media&token=005561ff-0b0f-429e-ae22-3a450128987f" alt=""></a>
+                    <div class="title"></div>
+                </div>
+    </div>
+   
+            
+            
+    <script type="text/javascript" src="cordova.js">
+    </script>
+    <script type="text/javascript" src="js/jquery.js">
+    </script>
+    
+    <script type="text/javascript" src="js/jquery.mobile.js">
+    </script>
+    <script type="text/javascript" src="js/index.js">
+    </script>
+</body>
+
+</html>
